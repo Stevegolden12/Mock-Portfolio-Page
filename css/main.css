@@ -2,8 +2,10 @@
 
 :root {
   --welcome-bkgndcolor: #e0ebe8;
+  --contact-bkgndcolor: #b1e0b7;
   --hoverColor: #2c2f2e;
-  --navColor: #245B2B;
+  --textColor: #245b2b;
+  --hoverBkColor: #c9d3d0;
 }
 
 body {
@@ -25,13 +27,13 @@ body {
 
 #navbar ul li {
   display: inline-block;
-  margin-left: 19%;
+  margin-left: 14%;
   font-size: 20px;
 }
 
-#navbar ul li a {
+a {
   text-decoration: none;
-  color: var(--navColor);
+  color: var( --textColor);
 }
 
 #navbar ul li a:hover {
@@ -47,6 +49,7 @@ body {
 }
 
 #welcome-section header {
+  width: 86%;
   font-size: 20px;
   font-weight: bold;
 }
@@ -54,11 +57,97 @@ body {
 .index__mnheadertext-font {
   font-size: 18px;
   font-weight: initial;
-  color: var(--navColor);
+  color: var( --textColor);
   background-color: var(--welcome-bkgndcolor);
 }
 
+#projects{
+  margin-bottom: 100px;
+}
 
+.project-tile{
+  margin: 0 auto;
+  width: 310px;
+  border: 1px solid var(--textColor);
+  margin-bottom: 40px;
+}
+
+#projects header {
+  text-align: center;
+  color: var( --textColor);
+}
+
+.projectImgs {
+  width: 310px;
+  height: 225px;
+}
+
+.index__projectTitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.index__showProjects {
+  width: 140px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--textColor);
+  border: 2px solid var(--textColor);
+  background-color: var(--welcome-bkgndcolor);
+  margin: 0 auto;
+  text-align: center;
+  padding: 7px 0;
+  border-radius: 20px;
+}
+
+.index__showProjects:hover {
+  background-color: var(--hoverBkColor);
+}
+
+#contact{
+  background-color: var(--contact-bkgndcolor);
+}
+
+.index__contactText{
+  padding: 100px 0 100px 0;
+  text-align: center;
+  font-size: 35px;
+}
+
+.index__contactLText {
+  font-size: 16px;
+}
+
+.index__contactOpt {
+  border: 2px solid var(--textColor);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 25px 0;
+  display: inline-block;
+  text-align: center;  
+}
+
+.index__contactOpt:nth-of-type(2){
+  padding: 40px 35px 20px 15px;
+}
+
+.index__contactOpt:nth-of-type(3) {
+  padding: 40px 35px 20px 15px;
+}
+
+.index__contactOpt:nth-of-type(4) {
+  padding: 40px 35px 20px 15px;
+}
+
+.index__contactOpt:nth-of-type(5) {
+  padding: 40px 35px 20px 15px;
+}
+
+.index__contactOpt:nth-of-type(6) {
+  padding: 40px 35px 20px 15px;
+}
 
 /* Medium Breakpoint 678px */
 @media(min-width: 678px) {
