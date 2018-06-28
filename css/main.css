@@ -1,26 +1,73 @@
 /* main.css of Mock Portfolio Page by Steve Golden */
 
 :root {
- --welcome-bkgndcolor: #e0ebe8;
+  --welcome-bkgndcolor: #e0ebe8;
+  --hoverColor: #2c2f2e;
+  --navColor: #245B2B;
+}
+
+body {
+  margin: 0;
+  font-family: Futura, sans-serif;
 }
 
 #navbar {
   background-color: var(--welcome-bkgndcolor);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #navbar ul {
   list-style: none;
+  padding-left: 0;
 }
 
 #navbar ul li {
+  display: inline-block;
+  margin-left: 19%;
+  font-size: 20px;
+}
+
+#navbar ul li a {
   text-decoration: none;
+  color: var(--navColor);
+}
+
+#navbar ul li a:hover {
+  color: var(--hovercolor);
 }
 
 #welcome-section {
   height: 100vh;
   background-color: var(--welcome-bkgndcolor);
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
+}
 
+#welcome-section header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.index__mnheadertext-font {
+  font-size: 18px;
+  font-weight: initial;
+  color: var(--navColor);
+  background-color: var(--welcome-bkgndcolor);
+}
+
+
+
+/* Medium Breakpoint 678px */
+@media(min-width: 678px) {
+  #navbar ul {
+    padding-left: 55%;
+  }
+
+    #navbar ul li {
+      margin-left: 11%;
+      font-size: 24px;
+    }
 }
