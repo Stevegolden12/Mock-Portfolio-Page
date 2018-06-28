@@ -3,6 +3,7 @@
 <html>
 <head><title>Mock Portfolio Page</title>
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </head>
 <body>
   <nav id="navbar">
@@ -14,8 +15,8 @@
   </nav>
   <section id="welcome-section">
     <header>
-      Hello! My name is Steve Golden.
-      <br />I am excited about technolgies and I am...
+      <h1>Hello! My name is Steve Golden.</h1>
+      I am excited about technolgies and I am...
       <br /><mark class="index__mnheadertext-font" >a web developer</mark>
     </header>
   </section>
@@ -64,14 +65,17 @@
       Let's work together...
       <div class="index__contactLText">How do you take your coffee?</div>
     </div>
-    <div class="index__contactOpt"><a href="#">Facebook</a></div>
-    <div class="index__contactOpt"><a href="#" id="profile-link">Github</a></div>
-    <div class="index__contactOpt"><a href="#">Twitter</a></div>
-    <div class="index__contactOpt"><a href="#">Send an email</a></div>
-    <div class="index__contactOpt"><a href="#">Call me</a></div>
+    <div class="index__contactOptWrap">
+      <div class="index__contactOpt"><a href="#">Facebook</a></div>
+      <div class="index__contactOpt"><a id="profile-link" href="https://github.com/Stevegolden12" target="_blank">Github</a></div>
+      <div class="index__contactOpt"><a href="#">Twitter</a></div>
+      <div class="index__contactOpt"><a href="#">Send an email</a></div>
+      <div class="index__contactOpt"><a href="#">Call me</a></div>
+    </div>
   </section>
   <footer>
-    **This is just a fake portfolio.. All the projects and contact details given are not real..mostly**
+    <div>**This is just a fake portfolio..</div>
+    <div>All the projects and contact details given are not real..mostly**</div>
     <div>© Created for FreeCodeCamp</div>
   </footer>
 </body>

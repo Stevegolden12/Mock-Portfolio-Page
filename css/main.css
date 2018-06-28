@@ -3,11 +3,13 @@
 :root {
   --welcome-bkgndcolor: #e0ebe8;
   --contact-bkgndcolor: #b1e0b7;
+  --footer-bkgndcolor: #22313F;
   --hoverColor: #2c2f2e;
   --textColor: #245b2b;
   --hoverBkColor: #c9d3d0;
 }
 
+/* index.html default css*/
 body {
   margin: 0;
   font-family: Futura, sans-serif;
@@ -52,6 +54,10 @@ a {
   width: 86%;
   font-size: 20px;
   font-weight: bold;
+}
+
+h1 {
+  margin: 0;
 }
 
 .index__mnheadertext-font {
@@ -107,6 +113,7 @@ a {
 
 #contact{
   background-color: var(--contact-bkgndcolor);
+  padding-bottom: 100px;
 }
 
 .index__contactText{
@@ -119,34 +126,51 @@ a {
   font-size: 16px;
 }
 
+.index__contactOptWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .index__contactOpt {
   border: 2px solid var(--textColor);
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin: 0 10px 25px 0;
+  margin: 0 25px 0 25px;
   display: inline-block;
-  text-align: center;  
+  text-align: center;
 }
 
-.index__contactOpt:nth-of-type(2){
-  padding: 40px 35px 20px 15px;
+
+.index__contactOpt:nth-of-type(1) {
+  padding: 40px 35px 10px 15px;
+}
+
+.index__contactOpt:nth-of-type(2) {
+  padding: 40px 25px 10px 25px;
 }
 
 .index__contactOpt:nth-of-type(3) {
-  padding: 40px 35px 20px 15px;
+  padding: 40px 25px 10px 25px
 }
 
 .index__contactOpt:nth-of-type(4) {
-  padding: 40px 35px 20px 15px;
+  padding: 25px 26px 25px 24px;
 }
 
 .index__contactOpt:nth-of-type(5) {
-  padding: 40px 35px 20px 15px;
+  padding: 35px 26px 15px 24px;
 }
 
-.index__contactOpt:nth-of-type(6) {
-  padding: 40px 35px 20px 15px;
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  min-height: 150px;
+  background-color: var(--footer-bkgndcolor);
+  color: white;
 }
 
 /* Medium Breakpoint 678px */
@@ -159,4 +183,9 @@ a {
       margin-left: 11%;
       font-size: 24px;
     }
+
+  #welcome-section header {
+    text-align: center;
+    font-size: 25px;
+  }
 }
