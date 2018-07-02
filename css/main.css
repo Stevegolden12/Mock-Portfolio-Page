@@ -7,6 +7,7 @@
   --hoverColor: #2c2f2e;
   --textColor: #245b2b;
   --hoverBkColor: #c9d3d0;
+  --indexMainFontSize: 20px;
 }
 
 /* index.html default css*/
@@ -30,7 +31,7 @@ body {
 #navbar ul li {
   display: inline-block;
   margin-left: 14%;
-  font-size: 20px;
+  font-size: var(--indexMainFontSize);
 }
 
 a {
@@ -52,7 +53,7 @@ a {
 
 #welcome-section header {
   width: 86%;
-  font-size: 20px;
+  font-size: var(--indexMainFontSize);
   font-weight: bold;
 }
 
@@ -141,6 +142,8 @@ h1 {
   display: inline-block;
   text-align: center;
 }
+
+/* Contact description text centering */
 
 .index__contactOpt:nth-of-type(1) {
   padding: 40px 35px 10px 15px;
